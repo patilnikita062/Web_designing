@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon">
+    <title>online order place</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url('asset/place.avif');
+            background-size: cover;
+        }
+        .container{
+            width: 520px;
+            height: 100px;
+            background-color: rgb(251, 207, 207);
+            text-align: center;
+            position: relative;
+            top: 300px;
+            left: 500px;
+            padding-top: 30px;
+            box-sizing: border-box;
+            font-size: 30px;
+            box-shadow: 0 0 3px white;
+            border-radius: 20px;
+            font-weight: bold;
+            animation-name: change_width;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+                }
+        @keyframes change_width {
+            20%{
+                left: 200px;
+                width: 600px;
+            }
+            60%{
+                left: 400px;
+                width: 800px;
+            }
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        your order has been placed successfully
+    </div>
+</body>
+
+</html>

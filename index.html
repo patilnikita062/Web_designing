@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon">
+    <title>Land of Boxes</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            height: 80px;
+            background-color: black;
+
+        }
+
+        nav,
+        ul,
+        li,p {
+            display: inline-block;
+            margin: 10px;
+            font-size: 18px;
+
+        }
+        
+        .welcome-txt{
+            position: absolute;
+            right: 200px;
+            color: lightgray;
+            top: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            display: inline-block;
+            height: 36px;
+            width: 311px;
+            margin-left: 308px;
+        }
+
+        .engine {
+            height: 37px;
+            width: 40px;
+            background-image: url('asset/search.png');
+            background-size: cover;
+            position: relative;
+            left: 869px;
+            bottom: 49px;
+        }
+
+        .nav-txt {
+            color: lightgray;
+            text-decoration: none;
+        }
+
+        .container {
+            height: 50vh;
+            background-color: antiquewhite;
+            display: flex;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            height: 300px;
+        }   
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+        .product-box{
+            height: 140px;
+            width: 200px;
+            border: 2px solid lightgrey;
+            background-color: rgb(222, 160, 73);
+            text-align: center;
+            padding-top: 60px;
+            box-sizing: border-box;
+            position: relative;
+            left: 50px;
+            top: 10px;
+            margin-bottom: 50px;
+            
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            height: 10vh;
+            background-color: rgb(75, 75, 75);
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: lightgrey;
+        }
+        .site-wall{
+            height: 50vh;
+            background-image: url('asset/back_box.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;           
+        }
+        .site-wall pre{
+            position: relative;
+            left: 650px;
+            top: 100px;
+            font-size: 30px;
+            font-weight: bolder;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-txt">Home</a></li>
+                <li><a href="#" class="nav-txt">About</a></li>
+                <li><a href="#" class="nav-txt">Contact</a></li>
+            </ul>
+            <input type="text" name="search" id="search" placeholder="Search here">
+            <a href="#" title="search">
+                <div class="engine"></div>
+            </a>
+            <p class="welcome-txt">Welcome to Land of Boxes</p>            
+        </nav>
+    </header>
+    <section class="site-wall">
+        <pre>Explore, design and 
+                order sustainable packaging  
+                        your customers will love</pre>       
+    </section>
+
+    <div class="container">
+        <div class="card box1">
+            <div class="product-box">The EconoBox</div>           
+            <p class="price">R 5</p>
+            <p>Product no.01</p>
+            <p>Product quality: A1</p>
+            <p><button><a href="order_form.html">Buy Now</a></button></p>
+        </div>
+        <div class="card box2">
+            <div class="product-box">The Standard Box</div>          
+            <p class="price">R 10</p>
+            <p>Product no.02</p>
+            <p>Product quality: A1</p>
+            <p><button><a href="order_form.html">Buy Now</a></button></p>
+        </div>
+        <div class="card box3">
+            <div class="product-box"> The Premium Box</div>
+            
+            <p class="price">R 15</p>
+            <p>Product no.03</p>
+            <p>Product quality: A3</p>
+            <p><button><a href="order_form.html">Buy Now</a></button></p>
+        </div>
+        <div class="card box4">
+            <div class="product-box">The Deluxe Box</div>
+            
+            <p class="price">R 10</p>
+            <p>Product no.04</p>
+            <p>Product quality: A1</p>
+            <p><button><a href="order_form.html">Buy Now</a></button></p>
+        </div>
+        <div class="card box5">
+            <div class="product-box">The Super Deluxe Box</div>
+            
+            <p class="price">R 30</p>
+            <p>Product no.05</p>
+            <p>Product quality: A1</p>
+            <p><button><a href="order_form.html">Buy Now</a></button></p>
+        </div>
+    </div>
+    <footer> &copy; Land of Boxes</footer>
+
+
+</body>
+
+</html>
